@@ -1,1 +1,3 @@
-# Practice_DN
+# AI实训
+# 第一天未整理
+## 目录分类Day 1， Day 2

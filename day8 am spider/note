@@ -1,0 +1,39 @@
+数据持久化存储
+1.pymongo的使用
+    前三步为创建对象
+    第一步创建连接对象
+    conn = pymongo.MongoClient('IP地址',27017)
+    第二步创建库
+    db = conn['库名']
+    第三步创建表
+    myset = db['集合名']
+    第四步把数据插入数据库
+    myset.insert.one({})
+2.mysql 使用
+    1.创建连接对象:db = pymysql.connect(..)
+    2.创建游标对象:cursor = db.cursor()
+    3.执行命令:cursor.execute()
+    4.提交到数据库执行:db.commit()
+    5.关闭:cursor.close()
+    mysql-Front使用流程
+
+    1.创建数据库
+        流程:localhost -->数据库-->新键-->数据库
+        数据库名称改为maoyan  -->字符集改成utf-8 -->确定
+
+    2.创建表
+        流程：选中maoyan数据库 -->选中数据 -->新键 -->出现添加表菜单  -->名称改为top100 -->创建成功
+
+    3.往表格中添加字段
+
+requests模块
+    1.安装
+
+    2.requests.get(url,headers=headers)
+        作用：向网站发起请求，并获取相应对象
+    3.响应对象（res）属性
+        1.res.text:获取响应内容（字符串）
+        2.res.content:响应内容(bytes)
+        3.res.status_code:HTTP响应码
+        4.res.encoding =‘utf-8'
+        
